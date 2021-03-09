@@ -633,7 +633,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -653,6 +653,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -807,15 +808,46 @@ template {
   line-height: 19px;
 }
 
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1120px) {
+  .slider {
+    width: 60%;
+  }
+  .hotel-right {
+    margin-left: 20px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 770px;
+    max-width: 700px;
   }
   .logo {
     width: 132px;
@@ -843,17 +875,55 @@ template {
   .search__input {
     width: 340px;
   }
-}
-
-@media (max-width: 1150px) {
-  .container {
-    width: 85%;
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    margin-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 
 @media (max-width: 820px) {
   .container {
     width: 91%;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    height: 350px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
   }
 }
 
@@ -926,6 +996,24 @@ template {
   .logo {
     width: 99px;
   }
+  .slider {
+    height: 250px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .slider {
+    height: 230px;
+  }
+}
+
+@media (max-width: 340px) {
+  .slider {
+    height: 210px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -950,6 +1038,18 @@ template {
     width: 280px;
     max-height: 30px;
     font-size: 24px;
+  }
+  .hotel-right {
+    height: 403px;
+  }
+  .slider {
+    height: 179px;
+  }
+  .booking {
+    height: 210px;
+  }
+  .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */
