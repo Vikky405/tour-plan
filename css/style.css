@@ -529,7 +529,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 
 .hotel-info__offer {
@@ -688,7 +688,7 @@ template {
 
 .booking {
   width: 350px;
-  min-height: 210px;
+  height: 210px;
   padding: 28px;
   border-radius: 8px;
   background-color: #0A223D;
@@ -767,7 +767,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 
 .booking__heading {
@@ -885,6 +885,7 @@ template {
     margin-bottom: 30px;
   }
   .hotel-right {
+    width: 100%;
     margin-left: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -893,9 +894,11 @@ template {
   }
   .booking {
     width: 340px;
+    height: 210px;
   }
   .map {
     width: 340px;
+    height: 210px;
   }
   .slider {
     width: 100%;
@@ -909,18 +912,37 @@ template {
 }
 
 @media (max-width: 768px) {
+  .navbar-menu {
+    padding: 23px 14px;
+  }
   .slider {
-    height: 350px;
+    height: 450px;
+  }
+  .hotel-info {
+    padding-bottom: 18px;
+  }
+  .hotel-info__descreption {
+    margin: 1px 0;
   }
   .hotel-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 450px;
   }
   .booking {
     width: 100%;
+    padding: 29px 21px 26px 22px;
+    margin-bottom: 20px;
+  }
+  .booking__info {
+    margin-bottom: 4px;
+  }
+  .booking__number {
+    margin-right: 7px;
   }
   .map {
     width: 100%;
@@ -1020,6 +1042,9 @@ template {
   .navbar {
     height: 70px;
   }
+  .navbar-top {
+    height: 70px;
+  }
   .navbar-button {
     display: none;
   }
@@ -1034,21 +1059,30 @@ template {
   .hotel {
     padding-top: 0;
   }
+  .hotel-info {
+    padding-bottom: 38px;
+  }
   .hotel-name {
     width: 280px;
     max-height: 30px;
     font-size: 24px;
   }
   .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 403px;
   }
   .slider {
     height: 179px;
   }
   .booking {
+    width: 280px;
     height: 210px;
   }
   .map {
+    width: 280px;
     height: 173px;
   }
 }
