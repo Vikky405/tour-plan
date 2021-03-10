@@ -19,7 +19,8 @@
     &-right
       margin-left: 20px
 @media (max-width: 992px)
-  .container
+  .container,
+  .newsletter-wrapper
     max-width: 700px
   .logo
     width: 132px
@@ -69,6 +70,31 @@
   .slider
     height: 450px
   .hotel
+    padding-bottom: 42px
+    &-info
+      padding-bottom: 18px
+      &__descreption
+        margin: 1px 0
+    &-right
+      display: flex
+  .booking
+    width: 340px
+    padding: 29px 21px 26px 22px
+    margin-bottom: 20px
+    margin-right: 20px
+    &__info
+      margin-bottom: 4px
+    &__number
+      margin-right: 7px
+  .map
+    width: 340px
+  .newsletter
+    height: 260px
+    padding: 92px 0 93px 0
+    &-title
+      margin: 0
+@media (max-width: 740px)
+  .hotel
     &-info
       padding-bottom: 18px
       &__descreption
@@ -86,6 +112,9 @@
       margin-right: 7px
   .map
     width: 100%
+  .newsletter
+    &-wrapper
+      width: 91%
 @media (max-width: 690px)
   .container
     max-width: 576px
@@ -127,6 +156,17 @@
       &__offer
         order: -1
         margin-left: 0
+  .newsletter
+    min-height: 319px
+    padding-top: 76px
+    padding-bottom: 83px
+    &-wrapper
+      max-width: 576px
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
+    &__title
+      margin-bottom: 37px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -135,6 +175,10 @@
   .hotel
     &__slider
       margin-bottom: 20px
+@media (max-width: 400px)
+  .newsletter
+    &__subscribe
+      width: 100%
 @media (max-width: 370px)
   .slider
     height: 230px
@@ -146,7 +190,6 @@
     height: 70px
     &-top
       height: 70px
-
     &-button
       display: none
   .container
@@ -167,10 +210,28 @@
       height: 403px
   .slider
     height: 179px
-
   .booking
     width: 280px
     height: 210px
   .map
     width: 280px
     height: 173px
+  .newsletter
+    padding-top: 76px
+    padding-bottom: 83px
+    &-wrapper
+      margin-left: 20px
+    &-title
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+  .subscribe
+    width: 280px
+    &__input
+      padding: 19px 139px 18px 20px
