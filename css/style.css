@@ -842,7 +842,7 @@ template {
 .newsletter-wrapper {
   position: relative;
   max-width: 731px;
-  max-height: 75px;
+  height: 75px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1335,17 +1335,11 @@ template {
     padding-top: 33px;
     padding-bottom: 60px;
   }
-  .card {
-    overflow: hidden;
-  }
   .card__title {
     width: 160px;
   }
   .card__title-last {
     width: 200px;
-  }
-  .card__image {
-    width: 100%;
   }
 }
 
@@ -1381,6 +1375,9 @@ template {
   }
   .map {
     width: 100%;
+  }
+  .map__content {
+    width: inherit;
   }
   .newsletter-wrapper {
     width: 91%;
@@ -1476,6 +1473,7 @@ template {
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
+    height: 160px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1560,7 +1558,6 @@ template {
   }
   .hotel-name {
     width: 280px;
-    max-height: 30px;
     font-size: 24px;
   }
   .hotel-right {
@@ -1642,6 +1639,21 @@ template {
   }
   .card {
     margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 300px) {
+  .booking {
+    width: 264px;
+  }
+  .map {
+    width: 264px;
+  }
+  .subscribe {
+    width: 260px;
+  }
+  .subscribe__input {
+    padding-right: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
