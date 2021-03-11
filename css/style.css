@@ -1050,6 +1050,94 @@ template {
   margin: auto;
 }
 
+.activities {
+  padding: 41px 0 98px 0;
+}
+
+.activities__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 24px 26px;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1062,6 +1150,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 215px;
+    height: 230px;
   }
 }
 
@@ -1077,6 +1169,23 @@ template {
   }
   .hotel-slider {
     width: 60%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .container {
+    width: 850px;
+  }
+  .card {
+    width: 410px;
+    height: 255px;
   }
 }
 
@@ -1107,6 +1216,10 @@ template {
     display: block;
     font-size: 12px;
     line-height: 15px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
   .search__input {
     width: 340px;
@@ -1151,6 +1264,9 @@ template {
 }
 
 @media (max-width: 768px) {
+  .container {
+    width: 700px;
+  }
   .navbar-menu {
     padding: 23px 14px;
   }
@@ -1215,9 +1331,28 @@ template {
   .reviews-slider__button--prev {
     left: -1px;
   }
+  .activities {
+    padding-top: 33px;
+    padding-bottom: 60px;
+  }
+  .card {
+    overflow: hidden;
+  }
+  .card__title {
+    width: 160px;
+  }
+  .card__title-last {
+    width: 200px;
+  }
+  .card__image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 740px) {
+  .container {
+    width: 650px;
+  }
   .hotel-info {
     padding-bottom: 18px;
   }
@@ -1264,6 +1399,9 @@ template {
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
     margin-right: -65px;
+  }
+  .card {
+    width: 315px;
   }
 }
 
@@ -1349,6 +1487,10 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1360,6 +1502,9 @@ template {
   }
   .hotel-slider {
     height: 250px;
+  }
+  .card {
+    width: 100%;
   }
 }
 
@@ -1461,6 +1606,9 @@ template {
   .subscribe__input {
     padding: 19px 139px 18px 20px;
   }
+  .reviews {
+    padding-bottom: 0;
+  }
   .reviews-slider__button {
     top: 27px;
   }
@@ -1480,6 +1628,20 @@ template {
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
+  }
+  .activities {
+    padding-top: 40px;
+  }
+  .activities__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+  }
+  .card {
+    margin-bottom: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
