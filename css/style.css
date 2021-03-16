@@ -1678,7 +1678,7 @@ template {
   .footer__contact-details {
     margin-bottom: -7px;
   }
-  .footer__form {
+  .footer-form {
     max-width: 539px;
   }
   .footer__input {
@@ -1749,7 +1749,7 @@ template {
 @media (max-width: 690px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 87%;
   }
   .navbar__search, .navbar-button, .navbar__user {
     display: none;
@@ -1851,9 +1851,17 @@ template {
   .card {
     width: 100%;
   }
+  .footer {
+    padding-top: 69px;
+    padding-bottom: 21px;
+  }
   .footer-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: 9;
+        grid-template-rows: 9;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1908,10 +1916,12 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+    max-width: 509px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    width: 100%;
   }
   .footer__bottom {
     -ms-grid-row: 8;
@@ -1920,6 +1930,28 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    margin: 0;
+    margin-top: -13px;
+  }
+  .footer__button {
+    margin-top: 22px;
+  }
+  .footer__info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: -150px;
+  }
+  .footer__icons-pay {
+    -ms-grid-row: 9;
+    grid-row: 9;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-top: -76px;
   }
 }
 
@@ -2045,6 +2077,7 @@ template {
   }
   .activities {
     padding-top: 40px;
+    padding-bottom: 43px;
   }
   .activities__title {
     font-style: normal;
@@ -2056,6 +2089,36 @@ template {
   }
   .card {
     margin-bottom: 24px;
+  }
+  .footer-wrapper {
+    row-gap: 28px;
+  }
+  .footer__additional {
+    margin-bottom: 6px;
+  }
+  .footer__contact-details {
+    width: 280px;
+    margin-bottom: 6px;
+  }
+  .footer__contact-form {
+    max-width: 280px;
+  }
+  .footer__item--mb-2 {
+    margin-bottom: 24px;
+  }
+  .footer__title--mb-3-send {
+    margin-bottom: 16px;
+  }
+  .footer__icons-pay {
+    margin-top: -42px;
+  }
+  .footer__bottom {
+    width: 98%;
+    margin-top: 0;
+  }
+  .descr-contacts {
+    margin-left: -15px;
+    margin-top: -3px;
   }
 }
 /*# sourceMappingURL=style.css.map */

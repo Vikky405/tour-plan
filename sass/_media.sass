@@ -206,7 +206,7 @@
     &__contact
       &-details
         margin-bottom: -7px
-    &__form
+    &-form
       max-width: 539px
     &__input
       flex-basis: 47%
@@ -254,7 +254,7 @@
 @media (max-width: 690px)
   .container
     max-width: 576px
-    width: 92%
+    width: 87%
   .navbar
     &__search, &-button, &__user
       display: none
@@ -321,8 +321,12 @@
   .card
     width: 100%
   .footer
+    padding-top: 69px
+    padding-bottom: 21px
     &-wrapper
       grid-template-columns: 1fr
+      grid-template-rows: 9
+      column-gap: 0px
     &__logo
       grid-row: 1
       grid-column: 1
@@ -351,12 +355,27 @@
       &-form
         grid-row: 7
         grid-column: 1
+        max-width: 509px
     &__input
       flex-basis: 100%
+      width: 100%
     &__bottom
       grid-row: 8
       width: 100%
       justify-content: space-between
+      align-self: start
+      margin: 0
+      margin-top: -13px
+    &__button
+      margin-top: 22px
+    &__info
+      flex-basis: 100%
+      margin-top: -150px
+    &__icons-pay
+      grid-row: 9
+      grid-column: 1
+      justify-self: start
+      margin-top: -76px
 
 @media (max-width: 400px)
   .newsletter
@@ -448,6 +467,7 @@
       text-transform: uppercase
   .activities
     padding-top: 40px
+    padding-bottom: 43px
     &__title
       font-style: normal
       font-weight: bold
@@ -457,3 +477,29 @@
       margin-bottom: 36px
   .card
     margin-bottom: 24px
+  .footer
+    &-wrapper
+      row-gap: 28px
+    &__additional
+      margin-bottom: 6px
+    &__contact
+      &-details
+        width: 280px
+        margin-bottom: 6px
+      &-form
+        max-width: 280px
+    &__item
+      &--mb-2
+        margin-bottom: 24px
+    &__title
+      &--mb-3
+        &-send
+          margin-bottom: 16px
+    &__icons-pay
+      margin-top: -42px
+    &__bottom
+      width: 98%
+      margin-top: 0
+  .descr-contacts
+    margin-left: -15px
+    margin-top: -3px
