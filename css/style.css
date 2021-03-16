@@ -1166,6 +1166,7 @@ template {
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  cursor: pointer;
 }
 
 .footer__categories {
@@ -1302,7 +1303,6 @@ template {
 }
 
 .footer__message {
-  width: 539px;
   height: 123px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1376,6 +1376,11 @@ template {
   -ms-grid-column-align: end;
       justify-self: end;
   margin-top: 71px;
+}
+
+.footer__tel {
+  color: inherit;
+  text-decoration: none;
 }
 
 @media (max-width: 1200px) {
