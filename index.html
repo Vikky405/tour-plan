@@ -10,19 +10,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar_mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo__link">
+        <a href="#" class="logo logo_link">
           <img src="img/logo-horizontal.svg" alt="Logo: Best Tour Plan" class="logo__img">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search-icon.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -35,10 +35,24 @@
       </div>
         <!-- /.container  -->
     </div>
-    
-    <div class="navbar-button">
+
+    <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search-icon.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -50,7 +64,7 @@
       </div>
       <!-- /.container -->
     </div>
-    <!-- /.navbar-button -->
+    <!-- /.navbar-bottom -->
   </header>
   <nav class="breadcrumbs">
     <div class="container">
@@ -376,7 +390,7 @@
               </div>
               <span class="descr-contacts">
                 Tel (business hours) : 
-                <a href="tel:269 1500"      class="footer__tel">269 1500</a> <br>
+                <a href="tel:269-1500"      class="footer__tel">269-1500</a> <br>
                 Tel (hotline) Monday - Saturday: 
                 <a href="tel:52-56-61-38" class="footer__tel">52-56-61-38</a> 
                 (08:00 am – 20:00 pm) <br>

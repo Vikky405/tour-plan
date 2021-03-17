@@ -48,7 +48,7 @@
     &__search
       margin-left: -26px
       margin-right: 0
-    &-button
+    &-bottom
       height: 60px
     &-menu
       padding-top: 22px
@@ -218,6 +218,9 @@
 @media (max-width: 740px)
   .container
     width: 650px
+  .navbar
+    &__search
+      width: 47%
   .hotel
     &-info
       padding-bottom: 18px
@@ -260,8 +263,49 @@
     max-width: 576px
     width: 87%
   .navbar
-    &__search, &-button, &__user
+    &-menu
+      &__item
+        &--mobile
+          &--visible
+            display: block
+    &_mobile
+      &-fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__search
+      &--mobile
+        &--visible
+          width: 340px
+          margin-left: 6px
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 72px
+      height: 100%
+      padding-top: 13px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+  body
+    padding-top: 72px
   .menu
     &-button
       display: flex
@@ -278,6 +322,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: auto
   .hotel
@@ -381,6 +431,11 @@
       justify-self: start
       margin-top: -76px
 @media (max-width: 400px)
+  .navbar
+    &__search
+      &--mobile
+        &--visible
+          width: 280px
   .newsletter
     &__subscribe
       width: 100%
@@ -401,12 +456,28 @@
     &-slider
       height: 210px
 @media (max-width: 320px)
+  .logo
+    &__img
+      width: 99px
+      height: 14px
   .navbar
     height: 70px
+    &-menu
+      padding-top: 17px
+      &__item
+        &--mobile
+          &--visible
+            margin-bottom: 27px
     &-top
       height: 70px
     &-button
       display: none
+    &__search
+      &--mobile
+        &--visible
+          width: 243px
+          margin-left: 2px
+          margin-bottom: 12px
   .container
     max-width: 87.5%
   .stars
