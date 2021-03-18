@@ -29,12 +29,14 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'vikky2913662@gmail.com'; // Логин на почте
-    $mail->Password   = 'qwert678jkl'; // Пароль на почте
+    $mail->Host       = 'mail.viktory-gorbatova.ru'; // SMTP сервера вашей почты
+    $mail->Username   = 'vikky@viktory-gorbatova.ru'; // Логин на почте
+    $mail->Password   = '5W4l2O4b'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('vikky2913662@gmail.com', 'Viktory Gorbatova'); // Адрес самой почты и имя отправителя
+    $mail->SMTPAutoTLS = false; 
+    $mail->SMTPSecure = false;
+    $mail->Port       = 25;
+    $mail->setFrom('vikky@viktory-gorbatova.ru', 'vikto187'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('v-gorbatova@mail.ru');  
@@ -68,4 +70,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
