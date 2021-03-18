@@ -26,7 +26,7 @@
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
-        <button class="menu-button navbar-top__menu-button">
+        <button class="menu-button navbar-top__menu-button">  
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -411,10 +411,10 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-3-send">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*">
-            <input type="text" class="footer__input" placeholder="Phone Number*">
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
+            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
+            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
