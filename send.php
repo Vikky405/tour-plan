@@ -33,9 +33,7 @@ try {
     $mail->Username   = 'vikky@viktory-gorbatova.ru'; // Логин на почте
     $mail->Password   = '5W4l2O4b'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
-    $mail->SMTPAutoTLS = false; 
-    $mail->SMTPSecure = false;
-    $mail->Port       = 25;
+    $mail->Port       = 465;
     $mail->setFrom('vikky@viktory-gorbatova.ru', 'vikto187'); // Адрес самой почты и имя отправителя
 
     // Получатель письма

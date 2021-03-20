@@ -214,7 +214,11 @@
       margin-top: 14px
     &__icons-pay
       margin-top: 8px
-
+  .modal
+    &__dialog
+      &--visible
+        max-width: 450px
+        width: 80%
 @media (max-width: 740px)
   .container
     width: 650px
@@ -430,6 +434,16 @@
       grid-column: 1
       justify-self: start
       margin-top: -76px
+@media (max-width: 550px)
+  .modal
+    &__dialog
+      padding: 33px 20px
+    &__info
+      margin-left: 10px
+@media (max-width: 508px)
+  .modal
+    &__info
+      margin-top: 10px
 @media (max-width: 400px)
   .navbar
     &__search
