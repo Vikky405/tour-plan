@@ -32,6 +32,7 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    $("body").addClass("modal-open");
   }
   function closeModal(event) {
     event.preventDefault();
@@ -39,7 +40,6 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    $("body").removeClass("modal-open");
   }
-
-
 });
