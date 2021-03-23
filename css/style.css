@@ -1331,7 +1331,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #000000;
 }
 
 .footer__form {
@@ -1356,7 +1356,6 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
   resize: none;
 }
 
@@ -1475,7 +1474,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #000000;
 }
 
 .modal__message {
@@ -1486,7 +1485,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #000000;
 }
 
 .modal__button {
@@ -2162,14 +2161,17 @@ template {
 }
 
 @media (max-width: 550px) {
+  __info {
+    margin-left: 10px;
+  }
+}
+
+@media (max-height: 530px) {
   .modal__dialog {
     padding: 33px 20px;
     overflow-y: scroll;
     max-height: 450px;
     height: 80%;
-  }
-  .modal__info {
-    margin-left: 10px;
   }
 }
 

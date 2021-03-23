@@ -54,6 +54,8 @@ $(document).ready(function () {
         },
         phone: {
           required: "The phone is required",
+          minlength: "At least 11 numbers please!",
+          maxlength: "At least 11 numbers please!",
         },
       },
     });
