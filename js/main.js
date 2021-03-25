@@ -68,9 +68,9 @@ $(document).ready(function () {
     }
   });
   
-  $(".map__image").one("mouseover", () => {
+  $(".map_image").one("mouseover", () => {
     $("#map").append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.541444613245!2d98.29703101449797!3d7.838257708657645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1615286852424!5m2!1sru!2sru" width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy" class="map__content"></iframe>');
-    $(".map__image").addClass("map__image--dn");
+    $(".map_image").addClass("map_image--dn");
     
   });
 });
