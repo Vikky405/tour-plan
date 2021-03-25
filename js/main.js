@@ -20,9 +20,9 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function() {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
-    $("body").addClass("mobile-open");
+    $("body").toggleClass("mobile-open");
   });
-  
+
   var modalButton = $("[data-toggle=modal]");
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");

@@ -7,13 +7,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header class="navbar navbar_mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo logo_link">
+        <a href="https://www.viktory-gorbatova.ru/homeworks/tour-plan/" class="logo logo_link">
           <img src="img/logo-horizontal.svg" alt="Logo: Best Tour Plan" class="logo__img">
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -76,6 +78,7 @@
           <a href="#" class="breadcrumbs-list__link">Flash Offers</a>
         </li>
         <li class="breadcrumbs-list__item">Grand Hilton Hotel</li>
+
       </ul>
     </div>
     <!-- /.container -->
@@ -97,11 +100,12 @@
     </div>
     <!-- /container -->
   </section> 
+
  
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <a href="#" class="logo footer__logo"><img src="img/logo-footer.svg" alt="Logo: Best Tour Plan" class="logo footer__logo footer__logo-img"></a>
+        <a href="https://www.viktory-gorbatova.ru/homeworks/tour-plan/" class="logo footer__logo"><img src="img/logo-footer.svg" alt="Logo: Best Tour Plan" class="logo footer__logo footer__logo-img"></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">All Categories</h3>
           <ul class="footer__ul">
@@ -189,10 +193,14 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-3-send">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__message" placeholder="Message" name="message"></textarea>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input input-tel" placeholder="Phone Number*" name="phone" minlength="17" maxlength="17" required>
+            </div>
+            <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>

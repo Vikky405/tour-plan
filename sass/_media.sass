@@ -88,6 +88,9 @@
     &__button
       &:hover
         background: $primary
+    &__num
+      &:hover
+        color: $light
   .map
     width: 340px
     height: 210px
@@ -110,6 +113,12 @@
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
+    &__link
+      &:hover
+        color: $light
+    &__tel
+      &:hover
+        color: $light
     &__social
       &-network
         grid-row: 1 / 2
@@ -397,6 +406,13 @@
   .footer
     &__additional
       margin-left: 0
+@media (max-height: 500px)
+  .navbar
+    &-bottom
+      &--visible
+        overflow-y: scroll
+        max-height: 600px
+        height: 87%
 @media (max-width: 576px)
   .logo
     width: 99px
