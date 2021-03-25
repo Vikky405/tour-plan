@@ -20,6 +20,7 @@ $(document).ready(function () {
   var menuButton = $(".menu-button");
   menuButton.on("click", function() {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    $("body").addClass("mobile-open");
   });
   
   var modalButton = $("[data-toggle=modal]");
@@ -54,8 +55,8 @@ $(document).ready(function () {
         },
         phone: {
           required: "The phone is required",
-          minlength: "At least 11 numbers please!",
-          maxlength: "At least 11 numbers please!",
+          minlength: "Enter the number according to the form",
+          maxlength: "Enter the number according to the form",
         },
       },
     });
