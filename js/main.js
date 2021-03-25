@@ -26,7 +26,7 @@ $(document).ready(function () {
   var modalButton = $("[data-toggle=modal]");
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
-  closeModalButton.on("click", closeModal);
+    closeModalButton.on("click", closeModal);
 
   function openModal() {
     var modalOverlay = $(".modal__overlay");
