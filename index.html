@@ -182,13 +182,16 @@
   </section> 
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">subscribe to our
+      <h2 class="newsletter-title">
+        <span class="newsletter-title__title">subscribe to our</span>
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe" data-aos="fade-left" data-aos-duration="1000">
-        <input type="email" class="subscribe__input" placeholder="Your email address"  name="email" required>
-        <button class="subscribe__button">Send</button>
-      </form>
+      <div class="newsletter__search">
+        <form action="send.php" method="POST" class="form subscribe newsletter__subscribe" data-aos="fade-left" data-aos-duration="1000">
+          <input type="email" class="subscribe__input" placeholder="Your email address"  name="email" required>
+          <button class="subscribe__button">Send</button>
+        </form>
+      </div>  
     </div>
     <!-- /.newsletter-wrapper -->
   </section>
@@ -290,12 +293,12 @@
         <div class="card activities__card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
           <img src="img/activity-1.jpg" alt="The curious corner 
           of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner 
+          <h3 class="card__title">The curious corner<br>
             of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
+        <div class="card activities__card activities__card--two" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
@@ -305,12 +308,12 @@
         <!-- /.card -->
         <div class="card activities__card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
-          <h3 class="card__title">Tamarind falls hiking
+          <h3 class="card__title">Tamarind falls hiking<br>
             trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500">
+        <div class="card activities__card activities__card--four" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image">
           <h3 class="card__title card__title-last">The blue marine discovery
