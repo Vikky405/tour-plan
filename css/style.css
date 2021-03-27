@@ -754,10 +754,17 @@ template {
   line-height: 18px;
 }
 
+.raiting__counter--small {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 18px;
+}
+
 .booking {
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 29px 29px 19px 26px;
   border-radius: 8px;
   background-color: #0A223D;
   color: #FFFFFF;
@@ -770,7 +777,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 5px;
 }
 
 .booking__price {
@@ -870,6 +877,7 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  padding: 14px;
   border-radius: 4px;
   border: none;
   background-color: #EC1F46;
@@ -1159,7 +1167,7 @@ iframe {
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
-  text-align: justify;
+  text-align: left;
   margin: auto;
 }
 

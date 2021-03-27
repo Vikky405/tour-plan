@@ -109,17 +109,23 @@
     font-weight: bold
     font-size: 14px
     line-height: 18px
+    &--small
+      font-style: normal
+      font-weight: bold
+      font-size: 10px
+      line-height: 18px
+
 .booking
   width: 350px
   min-height: 210px
-  padding: 28px
+  padding: 29px 29px 19px 26px
   border-radius: 8px
   background-color: $dark
   color: $light
   &__info
     display: flex
     justify-content: space-between
-    margin-bottom: 9px
+    margin-bottom: 5px
   &__price
     display: flex
     flex-direction: column
@@ -170,6 +176,7 @@
   &__button
     width: 100%
     min-height: 45px
+    padding: 14px
     border-radius: 4px
     border: none
     background-color: $primary
@@ -178,6 +185,7 @@
     font-weight: 600
     font-size: 14px
     line-height: 19px
+
     &:hover
       background: $footer-text-color
 .map

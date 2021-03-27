@@ -104,9 +104,10 @@
           <p class="hotel-descreption hotel-info__descreption">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
         <!-- /hotel-info__text -->
-        <div data-toggle="modal" class="raiting hotel-info__raiting">
+        <div class="raiting hotel-info__raiting">
           <span class="raiting__text">User Rattings</span>
-          <span class="raiting__counter">4.5/5</span>
+          <span class="raiting__counter">4.5/<span class="raiting__counter--small">5</span></span>
+          
         </div>
          <!--/raiting hotel-info__raiting  -->
       </div>
@@ -295,7 +296,7 @@
           of chamarel" class="card__image">
           <h3 class="card__title">The curious corner<br>
             of chamarel</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card activities__card--two" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1500">
@@ -303,14 +304,14 @@
           course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
             course</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking<br>
             trip - full day</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
         <div class="card activities__card activities__card--four" data-aos="flip-left" data-aos-delay="700" data-aos-duration="1500">
@@ -318,7 +319,7 @@
           quest" class="card__image">
           <h3 class="card__title card__title-last">The blue marine discovery
             quest</h3>
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
       </div>
@@ -420,7 +421,7 @@
           <h3 class="footer__title footer__title--mb-3 footer__title--mb-3-send">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form form">
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" minlength=2 name="name" required>
             </div>
             <div class="footer__input-group">
               <input type="tel" class="input footer__input input-tel" placeholder="Phone Number*" name="phone" minlength="17" maxlength="17" required>

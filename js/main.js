@@ -48,7 +48,10 @@ $(document).ready(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
-        name: "Please specify your name",
+        name: {
+          required: "Please specify your name",
+          minlength: "At least 2 letters please!",
+        }, 
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
